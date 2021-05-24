@@ -90,7 +90,6 @@ body {
 
     .cards-container {
         flex-direction: column;
-        flex-wrap: wrap;
     }
     
     .card {
