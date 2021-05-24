@@ -1,0 +1,119 @@
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: "Lexend Deca";
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-family: "Big Shoulders Display";
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: center;
+    max-width: 20ch;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.orange {
+    background: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+.lightcyan {
+    background: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+.darkcyan {
+    background: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+body {
+    background: hsl(0, 0%, 95%);
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.card {
+    max-width: 33%;
+    margin: 1em 0 1em 0;
+    border-radius: 5px;
+    padding: 3.5em;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-button {
+    border-radius: 5em;
+    padding: 1em;
+    margin: 4em 1em 0em 0.5em;
+    width: 10em;
+    background: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 375px){
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+    
+    .card {
+        padding: 4em;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .card-button {
+        display: block;
+        padding: 0.5em;
+        width: 100%;
+        margin: auto;
+    }
+
+    p {
+        max-width: 100%;
+        line-height: 2;
+        font-size: 2em;
+    }
+
+    .attribution {
+        position: unset;
+    }
+}
